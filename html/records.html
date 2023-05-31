@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accouty Wallet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body onload="setRecords()">
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="/html/index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/html/account.html">Account</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="/html/records.html">Records</a>
+  </li>
+</ul>
+<div class="p-2">
+  <table id="balance-sheet" class="table table-striped p-3" style="width:95%;margin-left:2.5%; margin-right: 2.5%;">
+    <thead>
+      <tr>
+      <th scope="col">Transaction Number</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Transaction Type</th>
+      <th scope="col">Details</th>
+      <th scope="col">Date</th>
+      </tr>
+    </thead>
+    <tbody id="tb-data"></tbody>
+  </table>
+</div>
+    <script src="/js/records.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
